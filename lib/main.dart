@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gas_project/strings_save.dart';
 import './constants.dart';
 import './screens/splash/splash_screen.dart';
 
@@ -12,12 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: appName,
       theme: ThemeData(
         primaryColor: oPrimaryColor,
         fontFamily: 'Muli',
         scaffoldBackgroundColor: kBackgroundColor,
-        textTheme: TextTheme(
+        textTheme: const TextTheme(
           bodyText1: TextStyle(color: kTextColor),
           bodyText2: TextStyle(color: kTextColor),
         ),
