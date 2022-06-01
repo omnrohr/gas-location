@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:gas_project/strings_save.dart';
+import '../routes.dart';
+import '../strings_save.dart';
 import './constants.dart';
 import './screens/splash/splash_screen.dart';
+import './theme.dart';
 
 void main() => runApp(const MyApp());
 
@@ -14,17 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: appName,
-      theme: ThemeData(
-        primaryColor: oPrimaryColor,
-        fontFamily: 'Muli',
-        scaffoldBackgroundColor: kBackgroundColor,
-        textTheme: const TextTheme(
-          bodyText1: TextStyle(color: kTextColor),
-          bodyText2: TextStyle(color: kTextColor),
-        ),
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: const SplashScreen(),
+      theme: theme(),
+      // home: const SplashScreen(),
+      initialRoute: SplashScreen.routeName,
+      routes: routes,
     );
   }
 }
