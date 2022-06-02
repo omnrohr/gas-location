@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../size_config.dart';
 
-import './sign_in_form.dart';
+import 'login_in_form.dart';
 import './social_card.dart';
 import './no_account_text.dart';
 

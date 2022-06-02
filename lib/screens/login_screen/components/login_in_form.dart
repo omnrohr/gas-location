@@ -101,11 +101,13 @@ class _SignInFormState extends State<SignInForm> {
           setState(() {
             errors.add(kEmailNullError);
           });
+          return '';
         } else if (!emailValidatorRegExp.hasMatch(value) &&
             !errors.contains(kInvalidEmailError)) {
           setState(() {
             errors.add(kInvalidEmailError);
           });
+          return '';
         }
         return null;
       },
@@ -141,12 +143,14 @@ class _SignInFormState extends State<SignInForm> {
           setState(() {
             errors.add(kPassNullError);
           });
+          return '';
         } else if (value.length < 8 &&
             value.isNotEmpty &&
             !errors.contains(kShortPassError)) {
           setState(() {
             errors.add(kShortPassError);
           });
+          return '';
         }
         return null;
       },

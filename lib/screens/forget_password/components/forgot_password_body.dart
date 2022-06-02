@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gas_project/screens/login_success/login_sucess_screen.dart';
 import '../../../components/default_button.dart';
 import '../../../components/error_form.dart';
 import '../../../screens/login_screen/components/no_account_text.dart';
@@ -112,6 +113,8 @@ class _ForgetPasswordFromState extends State<ForgetPasswordFrom> {
           press: () {
             if (_formKey.currentState!.validate()) {
               _formKey.currentState!.save();
+              Navigator.of(context)
+                  .pushReplacementNamed(LogInSuccessScreen.routName);
             }
           },
         ),
