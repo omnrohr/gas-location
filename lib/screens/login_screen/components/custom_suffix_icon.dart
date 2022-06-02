@@ -17,10 +17,6 @@ class CustomSuffixIcon extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(
           0, iconPadding / 2, iconPadding / 2, iconPadding / 2),
       child: Icon(icons, size: iconPadding * 1.4),
-      // child: SvgPicture.asset(
-      //   'assets/icons/Mail.svg',
-      //   height: getProportionateScreenWidth(18),
-      // ),
     );
   }
 }

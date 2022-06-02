@@ -42,6 +42,15 @@ OutlineInputBorder outlineInputBorder() {
   );
 }
 
+TextStyle kBigTitleStyle() {
+  return TextStyle(
+    fontSize: getProportionateScreenWidth(28),
+    color: Colors.black,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+  );
+}
+
 const Map<int, Color> color = {
   50: Color.fromRGBO(136, 14, 79, .1),
   // 100: Color.fromRGBO(136, 14, 79, .2),
