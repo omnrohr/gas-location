@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gas_project/screens/profile_screen/complete_profile_screen.dart';
 
 import '../../../components/default_button.dart';
 import '../../../components/error_form.dart';
@@ -39,7 +40,10 @@ class _SignUpFormState extends State<SignUpForm> {
             DefaultButton(
               text: 'Continue',
               press: () {
-                if (_formKey.currentState!.validate()) {}
+                // if (_formKey.currentState!.validate()) {
+                Navigator.of(context)
+                    .pushNamed(CompleteProfileScreen.routeName);
+                // }
               },
             ),
           ],

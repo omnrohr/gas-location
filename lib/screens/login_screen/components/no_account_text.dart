@@ -16,7 +16,7 @@ class NoAccountText extends StatelessWidget {
         const Text("Don't have an account?"),
         TextButton(
           onPressed: () {
-            Navigator.of(context).pushNamed(SignUpScreen.routName);
+            Navigator.of(context).pushNamed(SignUpScreen.routeName);
           },
           child: const Text(
             'Sign Up',
