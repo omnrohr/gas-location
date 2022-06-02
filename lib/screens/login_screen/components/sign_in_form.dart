@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gas_project/screens/forget_password/forget_password_screen.dart';
 
 import '../../../components/default_button.dart';
 import '../../../components/error_form.dart';
@@ -46,8 +47,14 @@ class _SignInFormState extends State<SignInForm> {
                     }),
                 const Text('Remember me'),
                 const Spacer(),
-                const Text('Forgot Password',
-                    style: TextStyle(decoration: TextDecoration.underline)),
+                InkWell(
+                  onTap: () {
+                    Navigator.of(context)
+                        .pushNamed(ForgetPasswordScreen.routeName);
+                  },
+                  child: const Text('Forgot Password',
+                      style: TextStyle(decoration: TextDecoration.underline)),
+                ),
               ],
             ),
             SizedBox(height: getProportionateScreenWidth(20)),

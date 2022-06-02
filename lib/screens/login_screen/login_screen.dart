@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gas_project/constants.dart';
-import 'package:gas_project/screens/login_screen/components/log_in_body.dart';
+import './components/log_in_body.dart';
 
 class LogInScreen extends StatelessWidget {
   const LogInScreen({Key? key}) : super(key: key);
@@ -12,9 +11,9 @@ class LogInScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Sign In'),
+          title: const Text('Sign In'),
         ),
-        body: LogInBody(),
+        body: const LogInBody(),
       ),
     );
   }

@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import '../../../../constants.dart';
-import '../../../../strings_save.dart';
-import '../../../components/default_button.dart';
 import '../../../size_config.dart';
 
-import '../../../components/error_form.dart';
-import './custom_suffix_icon.dart';
 import './sign_in_form.dart';
 import './social_card.dart';
+import './no_account_text.dart';
 
 class LogInBody extends StatelessWidget {
   const LogInBody({Key? key}) : super(key: key);
@@ -33,6 +28,7 @@ class LogInBody extends StatelessWidget {
             Text(
               'Sign in with your email and password\nor continue with social media',
               style: Theme.of(context).textTheme.bodyText1,
+              textAlign: TextAlign.center,
             ),
             SizedBox(
               height: SizeConfig.screenHeight * 0.04,
@@ -61,20 +57,7 @@ class LogInBody extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text("Don't have an account?"),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    'Sign in',
-                    style: TextStyle(
-                        color: kPrimaryColor, fontWeight: FontWeight.bold),
-                  ),
-                ),
-              ],
-            )
+            const NoAccountText()
           ],
         ),
       ),
