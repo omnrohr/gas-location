@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gas_project/screens/otp_screen/otp_verification_screen.dart';
 
 import '../../../components/default_button.dart';
 import '../../../components/error_form.dart';
@@ -52,7 +53,9 @@ class _CompleteProfileForamState extends State<CompleteProfileForam> {
             DefaultButton(
               text: 'Continue',
               press: () {
-                if (_formKey.currentState!.validate()) {}
+                // if (_formKey.currentState!.validate()) {
+                Navigator.pushNamed(context, OTPVerificationScreen.routeName);
+                // }
               },
             ),
           ],
