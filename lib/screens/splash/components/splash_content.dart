@@ -17,7 +17,7 @@ class SplashContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Spacer(),
+        const Spacer(),
         Text(
           title,
           style: TextStyle(
@@ -30,7 +30,7 @@ class SplashContent extends StatelessWidget {
           subTitle,
           style: Theme.of(context).textTheme.subtitle1,
         ),
-        Spacer(
+        const Spacer(
           flex: 2,
         ),
         Image.asset(

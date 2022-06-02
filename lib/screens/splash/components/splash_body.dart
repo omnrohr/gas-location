@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gas_project/componenets/rounded_button.dart';
 import 'package:gas_project/constants.dart';
+import 'package:gas_project/screens/login_screen/login_screen.dart';
 import 'package:gas_project/size_config.dart';
+import '../../../components/rounded_button.dart';
 import '../../../strings_save.dart';
 import './splash_content.dart';
 
@@ -68,35 +69,7 @@ class _SplashBodyState extends State<SplashBody> {
                 const Spacer(
                   flex: 2,
                 ),
-                RoundedButton(
-                    border: 20,
-                    fontsSize: 18,
-                    height: getProportionateScreenHeight(56),
-                    text: currentPage == splashData.length - 1
-                        ? 'Lets Go'
-                        : 'Continue',
-                    press: () {
-                      _pageController.nextPage(
-                          duration: kAnimationDuration, curve: Curves.easeIn);
-                    }),
-                // Container(
-                //   width: double.infinity,
-                //   color: oPrimaryColor,
-                //   child: TextButton(
-                //       onPressed: () {
-                //         _pageController.nextPage(
-                //             duration: kAnimationDuration, curve: Curves.easeIn);
-                //       },
-                //       child: Text(
-                //         currentPage == splashData.length - 1
-                //             ? 'Lets Go'
-                //             : 'Continue',
-                //         style: TextStyle(
-                //             fontSize: getProportionateScreenWidth(18),
-                //             color: Colors.white,
-                //             fontWeight: FontWeight.bold),
-                //       )),
-                // ),
+                buildRoundedButton(context),
                 const Spacer(
                   flex: 1,
                 )
@@ -106,6 +79,22 @@ class _SplashBodyState extends State<SplashBody> {
         ],
       ),
     );
+  }
+
+  RoundedButton buildRoundedButton(BuildContext context) {
+    return RoundedButton(
+        border: 20,
+        fontsSize: 18,
+        height: getProportionateScreenHeight(56),
+        text: currentPage == splashData.length - 1 ? 'Lets Go' : 'Continue',
+        press: () {
+          if (!(currentPage == splashData.length - 1)) {
+            _pageController.nextPage(
+                duration: kAnimationDuration, curve: Curves.easeIn);
+          } else {
+            Navigator.pushNamed(context, LogInScreen.routeName);
+          }
+        });
   }
 
   AnimatedContainer buildDot(int index) {
