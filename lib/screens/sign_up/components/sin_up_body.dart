@@ -24,7 +24,7 @@ class SignUpBody extends StatelessWidget {
             SizedBox(height: SizeConfig.screenHeight * 0.03),
             const SignUpForm(),
             SizedBox(height: SizeConfig.screenHeight * 0.03),
-            SizedBox(height: getProportionateScreenWidth(20)),
+            SizedBox(height: proportionateScreenWidthOf20),
             const SocialMediaAuthentication(),
             const Text(
               'By Continuing you are confirm that you agree\nwith out Terms and conditions',

@@ -12,8 +12,7 @@ class OTPBody extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: Padding(
-        padding:
-            EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
+        padding: EdgeInsets.symmetric(horizontal: proportionateScreenWidthOf20),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -28,8 +27,7 @@ class OTPBody extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: const Text('Resend OTP Code',
-                    style:
-                        const TextStyle(decoration: TextDecoration.underline)),
+                    style: TextStyle(decoration: TextDecoration.underline)),
               ),
             ],
           ),

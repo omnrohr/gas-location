@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gas_project/screens/login_success/login_sucess_screen.dart';
 import '../../../screens/forget_password/forget_password_screen.dart';
 
 import '../../../components/default_button.dart';
@@ -25,16 +26,15 @@ class _SignInFormState extends State<SignInForm> {
     return Form(
       key: _formKey,
       child: Padding(
-        padding:
-            EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
+        padding: EdgeInsets.symmetric(horizontal: proportionateScreenWidthOf20),
         child: Column(
           children: [
             buildEmailFormField(),
-            SizedBox(height: getProportionateScreenHeight(20)),
+            SizedBox(height: proportionateScreenHeightOf20),
             buildPasswordFormFelid(),
-            SizedBox(height: getProportionateScreenHeight(20)),
+            SizedBox(height: proportionateScreenHeightOf20),
             FormError(errors: errors),
-            SizedBox(height: getProportionateScreenWidth(10)),
+            SizedBox(height: proportionateScreenHeightOf20),
             Row(
               children: [
                 Checkbox(
@@ -57,13 +57,15 @@ class _SignInFormState extends State<SignInForm> {
                 ),
               ],
             ),
-            SizedBox(height: getProportionateScreenWidth(20)),
+            SizedBox(height: proportionateScreenWidthOf20),
             DefaultButton(
               text: 'Continue',
               press: () {
-                if (_formKey.currentState!.validate()) {
-                  _formKey.currentState!.save();
-                }
+                // if (_formKey.currentState!.validate()) {
+                _formKey.currentState!.save();
+                Navigator.of(context)
+                    .pushReplacementNamed(LogInSuccessScreen.routName);
+                // }
               },
             )
           ],

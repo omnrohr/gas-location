@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../constants.dart';
 import '../../../size_config.dart';
 
 import 'login_in_form.dart';
@@ -38,7 +39,7 @@ class LogInBody extends StatelessWidget {
               height: SizeConfig.screenHeight * 0.04,
             ),
             SizedBox(
-              height: getProportionateScreenWidth(20),
+              height: proportionateScreenWidthOf20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

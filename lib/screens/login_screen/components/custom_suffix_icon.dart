@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../size_config.dart';
+import '../../../constants.dart';
 
 class CustomSuffixIcon extends StatelessWidget {
   const CustomSuffixIcon({
@@ -12,11 +12,10 @@ class CustomSuffixIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double iconPadding = getProportionateScreenWidth(20);
     return Padding(
-      padding: EdgeInsets.fromLTRB(
-          0, iconPadding / 2, iconPadding / 2, iconPadding / 2),
-      child: Icon(icons, size: iconPadding * 1.4),
+      padding: EdgeInsets.fromLTRB(0, proportionateScreenWidthOf20 / 2,
+          proportionateScreenWidthOf20 / 2, proportionateScreenWidthOf20 / 2),
+      child: Icon(icons, size: proportionateScreenWidthOf20 * 1.4),
     );
   }
 }

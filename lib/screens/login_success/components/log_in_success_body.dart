@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gas_project/components/default_button.dart';
+import 'package:gas_project/screens/home/home_screen.dart';
 import 'package:gas_project/size_config.dart';
 
 class LogInSuccessBody extends StatelessWidget {
@@ -36,7 +37,12 @@ class LogInSuccessBody extends StatelessWidget {
         const Spacer(),
         SizedBox(
           width: SizeConfig.screenWidth * 0.6,
-          child: DefaultButton(text: 'Back to home', press: () {}),
+          child: DefaultButton(
+              text: 'Back to home',
+              press: () {
+                Navigator.of(context)
+                    .pushReplacementNamed(HomeScreen.routeName);
+              }),
         ),
         const Spacer(),
       ],

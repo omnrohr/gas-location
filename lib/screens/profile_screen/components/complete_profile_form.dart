@@ -8,14 +8,14 @@ import '../../../size_config.dart';
 import '../../../strings_save.dart';
 import '../../login_screen/components/custom_suffix_icon.dart';
 
-class CompleteProfileForam extends StatefulWidget {
-  const CompleteProfileForam({Key? key}) : super(key: key);
+class CompleteProfileForm extends StatefulWidget {
+  const CompleteProfileForm({Key? key}) : super(key: key);
 
   @override
-  State<CompleteProfileForam> createState() => _CompleteProfileForamState();
+  State<CompleteProfileForm> createState() => _CompleteProfileFormState();
 }
 
-class _CompleteProfileForamState extends State<CompleteProfileForam> {
+class _CompleteProfileFormState extends State<CompleteProfileForm> {
   final _formKey = GlobalKey<FormState>();
   final List<String> errors = [];
   String? firstName, lastName, phoneNumber, address;

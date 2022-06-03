@@ -25,18 +25,17 @@ class _SignUpFormState extends State<SignUpForm> {
     return Form(
       key: _formKey,
       child: Padding(
-        padding:
-            EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
+        padding: EdgeInsets.symmetric(horizontal: proportionateScreenWidthOf20),
         child: Column(
           children: [
             buildEmailFormField(),
-            SizedBox(height: getProportionateScreenHeight(20)),
+            SizedBox(height: proportionateScreenHeightOf20),
             buildPasswordFormFelid(),
-            SizedBox(height: getProportionateScreenHeight(20)),
+            SizedBox(height: proportionateScreenHeightOf20),
             buildConfirmPasswordFormFelid(),
-            SizedBox(height: getProportionateScreenHeight(20)),
+            SizedBox(height: proportionateScreenHeightOf20),
             FormError(errors: errors),
-            SizedBox(height: getProportionateScreenWidth(20)),
+            SizedBox(height: proportionateScreenWidthOf20),
             DefaultButton(
               text: 'Continue',
               press: () {

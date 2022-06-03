@@ -8,8 +8,8 @@ class CompleteProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Sign Up')),
-      body: CompleteProfileBody(),
+      appBar: AppBar(title: const Text('Sign Up')),
+      body: const CompleteProfileBody(),
     );
   }
 }
