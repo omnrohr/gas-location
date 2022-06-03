@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gas_project/constants.dart';
 
-import '../../../size_config.dart';
 import './icon_with_counter.dart';
 import './search_input_field_with_icon.dart';
 

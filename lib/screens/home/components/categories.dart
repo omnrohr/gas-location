@@ -53,16 +53,16 @@ class CategoryCart extends StatelessWidget {
               child: Container(
                 padding: EdgeInsets.all(getProportionateScreenWidth(15)),
                 decoration: BoxDecoration(
-                  color: Color(0xFFFFECDF),
+                  color: const Color(0xFFFFECDF),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: SvgPicture.asset(icon),
               ),
             ),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             Text(
               text,
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
           ],

@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:gas_project/screens/login_success/login_sucess_screen.dart';
+import '../../login_success/login_success_screen.dart';
 import '../../../screens/forget_password/forget_password_screen.dart';
 
 import '../../../components/default_button.dart';
 import '../../../components/error_form.dart';
 import '../../../constants.dart';
-import '../../../size_config.dart';
 import '../../../strings_save.dart';
 import './custom_suffix_icon.dart';
 

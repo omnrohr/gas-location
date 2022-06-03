@@ -39,7 +39,7 @@ class ProductCard extends StatelessWidget {
             ),
             Text(
               product.title,
-              style: TextStyle(color: Colors.black),
+              style: const TextStyle(color: Colors.black),
               maxLines: 2,
             ),
             Row(
@@ -68,8 +68,8 @@ class ProductCard extends StatelessWidget {
                     child: SvgPicture.asset(
                       'assets/icons/Heart Icon_2.svg',
                       color: product.isFavorite
-                          ? Color(0XFFFF4848)
-                          : Color(0XFFDBDee4),
+                          ? const Color(0XFFFF4848)
+                          : const Color(0XFFDBDee4),
                     ),
                   ),
                 ),

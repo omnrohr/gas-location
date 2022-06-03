@@ -28,7 +28,7 @@ class SectionWithTitle extends StatelessWidget {
                   color: Colors.black),
             ),
           ),
-          Text('see more'),
+          const Text('see more'),
         ],
       ),
     );

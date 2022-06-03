@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:gas_project/screens/profile_screen/complete_profile_screen.dart';
+import '../../../screens/profile_screen/complete_profile_screen.dart';
 
 import '../../../components/default_button.dart';
 import '../../../components/error_form.dart';
 import '../../../constants.dart';
-import '../../../size_config.dart';
 import '../../../strings_save.dart';
 import '../../login_screen/components/custom_suffix_icon.dart';
 

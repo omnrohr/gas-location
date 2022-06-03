@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import './screens/forget_password/forget_password_screen.dart';
 import './screens/home/home_screen.dart';
 import './screens/login_screen/login_screen.dart';
-import './screens/login_success/login_sucess_screen.dart';
+import 'screens/login_success/login_success_screen.dart';
 import './screens/otp_screen/otp_verification_screen.dart';
 import './screens/profile_screen/complete_profile_screen.dart';
 import './screens/sign_up/sign_up_screen.dart';

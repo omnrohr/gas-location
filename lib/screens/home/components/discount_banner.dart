@@ -24,7 +24,7 @@ class DiscountBanner extends StatelessWidget {
           borderRadius: BorderRadius.circular(20)),
       child: const Text.rich(TextSpan(
           text: 'A summer surprise\n',
-          style: const TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.white),
           children: [
             TextSpan(
                 text: 'CashBack 20%',
