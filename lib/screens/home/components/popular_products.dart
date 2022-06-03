@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gas_project/screens/details/details_screen.dart';
 
 import '../../../constants.dart';
 import '../../../models/product.dart';
@@ -21,8 +22,14 @@ class PopularProducts extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              ...List.generate(demoProducts.length,
-                  (index) => ProductCard(product: demoProducts[index])),
+              ...List.generate(
+                  demoProducts.length,
+                  (index) => ProductCard(
+                      product: demoProducts[index],
+                      onPress: () => Navigator.of(context).pushNamed(
+                          DetailsScreen.routeName,
+                          arguments: ProductDetailsArgument(
+                              product: demoProducts[index])))),
             ],
           ),
         ),
