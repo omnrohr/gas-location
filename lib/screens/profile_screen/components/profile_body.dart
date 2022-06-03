@@ -14,15 +14,15 @@ class CompleteProfileBody extends StatelessWidget {
       child: SingleChildScrollView(
         child: Padding(
           padding:
-              EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
+              EdgeInsets.symmetric(horizontal: proportionateScreenWidthOf20),
           child: Column(
             children: [
-              Text('Coplete your profile', style: kBigTitleStyle()),
-              Text('Complete your detials or continue\nwith social media',
+              Text('Complete your profile', style: kBigTitleStyle()),
+              const Text('Complete your details or continue\nwith social media',
                   textAlign: TextAlign.center),
-              SizedBox(height: getProportionateScreenWidth(20)),
-              CompleteProfileForam(),
-              SizedBox(height: getProportionateScreenWidth(20)),
+              SizedBox(height: proportionateScreenWidthOf20),
+              const CompleteProfileForm(),
+              SizedBox(height: proportionateScreenWidthOf20),
               const Text(
                 'By Continuing you are confirm that you agree\nwith out Terms and conditions',
                 textAlign: TextAlign.center,

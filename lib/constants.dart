@@ -65,3 +65,8 @@ const Map<int, Color> color = {
 };
 
 MaterialColor oPrimaryColor = const MaterialColor(0xFFFF7643, color);
+
+final double proportionateScreenWidthOf20 = getProportionateScreenWidth(20);
+final double proportionateScreenWidthOf30 = getProportionateScreenWidth(30);
+final double proportionateScreenWidthOf50 = getProportionateScreenWidth(50);
+final double proportionateScreenHeightOf20 = getProportionateScreenHeight(20);

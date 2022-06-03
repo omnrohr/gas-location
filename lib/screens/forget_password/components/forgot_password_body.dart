@@ -19,7 +19,7 @@ class ForgotPasswordBody extends StatelessWidget {
         width: double.infinity,
         child: Padding(
           padding:
-              EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
+              EdgeInsets.symmetric(horizontal: proportionateScreenWidthOf20),
           child: Column(
             children: [
               SizedBox(height: SizeConfig.screenHeight * 0.04),
