@@ -32,7 +32,7 @@ class ProductDescription extends StatelessWidget {
             textAlign: TextAlign.left,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 5,
         ),
         Align(
@@ -41,14 +41,17 @@ class ProductDescription extends StatelessWidget {
             padding: EdgeInsets.all(getProportionateScreenWidth(15)),
             width: getProportionateScreenWidth(64),
             decoration: BoxDecoration(
-                color:
-                    product.isFavorite ? Color(0XFFFFe6E6) : Color(0xFFF5F6F9),
-                borderRadius: BorderRadius.only(
+                color: product.isFavorite
+                    ? const Color(0XFFFFe6E6)
+                    : const Color(0xFFF5F6F9),
+                borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(15),
                     bottomLeft: Radius.circular(15))),
             child: SvgPicture.asset(
               'assets/icons/Heart Icon_2.svg',
-              color: product.isFavorite ? Color(0XFFFF4848) : Color(0XFFDBDEE4),
+              color: product.isFavorite
+                  ? const Color(0XFFFF4848)
+                  : const Color(0XFFDBDEE4),
             ),
           ),
         ),
@@ -67,7 +70,7 @@ class ProductDescription extends StatelessWidget {
           child: InkWell(
             onTap: onPress,
             child: Row(
-              children: [
+              children: const [
                 Text(
                   'See More Details..',
                   style: TextStyle(
