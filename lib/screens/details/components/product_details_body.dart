@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gas_project/components/default_button.dart';
 import 'package:gas_project/constants.dart';
 import 'package:gas_project/models/product.dart';
+import 'package:gas_project/screens/cart/cart_screen.dart';
 import 'package:gas_project/size_config.dart';
 
 import './product_images.dart';

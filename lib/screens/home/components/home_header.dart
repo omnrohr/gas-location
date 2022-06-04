@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gas_project/constants.dart';
+import 'package:gas_project/screens/cart/cart_screen.dart';
 
 import './icon_with_counter.dart';
 import './search_input_field_with_icon.dart';
@@ -22,7 +23,10 @@ class HomeHeader extends StatelessWidget {
           ),
           // RoundedIconWithSvg(svgSrc: 'assets/icons/Cart Icon.svg'),
           IconBtnWithCounter(
-              svgSrc: 'assets/icons/Cart Icon.svg', onPress: () {}),
+              svgSrc: 'assets/icons/Cart Icon.svg',
+              onPress: () {
+                Navigator.of(context).pushNamed(CartScreen.routeName);
+              }),
           IconBtnWithCounter(
               svgSrc: 'assets/icons/Bell.svg',
               numOfProducts: 3,
