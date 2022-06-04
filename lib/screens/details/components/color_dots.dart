@@ -22,7 +22,10 @@ class _ColorDotsState extends State<ColorDots> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: proportionateScreenWidthOf20),
+      padding: EdgeInsets.only(
+          right: proportionateScreenWidthOf20,
+          left: proportionateScreenWidthOf20,
+          bottom: getProportionateScreenWidth(15)),
       child: Row(
         children: [
           ...List.generate(
