@@ -34,7 +34,7 @@ class _SplashBodyState extends State<SplashBody> {
     return SafeArea(
       child: Column(
         children: [
-          Expanded(
+          Flexible(
               flex: 3,
               child: PageView.builder(
                 onPageChanged: (value) {
@@ -50,7 +50,7 @@ class _SplashBodyState extends State<SplashBody> {
                   image: splashData[i]['image'] as String,
                 ),
               )),
-          Expanded(
+          Flexible(
             flex: 2,
             child: Column(
               children: [
